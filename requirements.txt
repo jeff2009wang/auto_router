@@ -1,0 +1,42 @@
+# FastAPI和Web框架
+fastapi>=0.104.0
+uvicorn[standard]>=0.24.0
+
+# 机器学习和模型相关
+transformers>=4.50.0
+accelerate>=0.30.0
+bitsandbytes>=0.49.0
+safetensors>=0.4.0
+modelscope>=1.18.0
+sentence-transformers>=2.2.0
+
+# 图像处理
+Pillow>=10.0.0
+
+# 聚合API
+litellm>=1.0.0
+
+# 数值计算
+numpy>=1.24.0
+
+# 环境变量
+python-dotenv>=1.0.0
+
+# 系统监控
+psutil>=5.9.0
+
+# 异步支持
+aiofiles>=23.0.0
+
+# 日志和调试
+rich>=13.0.0
+
+# 数据验证
+pydantic>=2.0.0
+pydantic-settings>=2.0.0
+
+# HTTP客户端
+httpx>=0.25.0
+
+# 缓存
+cachetools>=5.3.0
