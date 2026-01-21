@@ -52,8 +52,8 @@ class Settings(BaseModel):
     ROUTE_CACHE_TTL: int = 3600
     
     # 聚合API配置
-    AGGREGATOR_API_KEY: str = "sk-DuctN11czck6s758299ZoeipAjKmlhXcfhGchCZwQttQqI1o"
-    AGGREGATOR_BASE_URL: str = "http://192.168.50.165:3000/v1"
+    AGGREGATOR_API_KEY: str = Field(default_factory=lambda: os.getenv("AGGREGATOR_API_KEY", ""))
+    AGGREGATOR_BASE_URL: str = Field(default_factory=lambda: os.getenv("AGGREGATOR_BASE_URL", "http://192.168.50.165:3000/v1"))
     
     # 目标模型映射
     MODEL_MAP: Dict[str, str] = Field(default_factory=lambda: {
